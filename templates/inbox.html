@@ -1,0 +1,64 @@
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet"> 
+
+<nav>
+    <a href="/logout" class="logout-button">Logout</a>
+</nav>
+<h1>Your Inbox</h1>
+<div class="container">  <ul>
+        {% for thread in threads %}
+        <li>
+        <a href="{{ url_for('view_thread', thread_id=thread.thread_id) }}"> 
+            <b>Subject:</b> {{ thread.latest_subject }} <br> 
+            <b>From:</b> {{ thread.latest_from_address }}
+        </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+    <div class="pagination">
+        {% if prev_url %}
+        <a href="{{ prev_url }}">Previous</a>
+        {% endif %}
+        Page {{ page }}  {% if next_url %}
+        <a href="{{ next_url }}">Next</a>
+        {% endif %}
+    </div>
+</div>
+
+<style>
+body {
+  font-family: 'Luckiest Guy', cursive;
+  background: linear-gradient(to right, #E8FFC9, #D79771); 
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  font-family: 'Open Sans', sans-serif; /* Fallbacks for broader compatibility */
+    font-size: 16px; /* Adjust size as necessary */
+    line-height: 1.5; /* Good line spacing improves readability */
+    color: #333; /* A darker grey that's softer on the eyes than pure black */
+  width: 400px;
+  text-align: left;
+  font-weight: 750;
+  margin: 60px auto; 
+  background-color: #C9FFD9; 
+  padding: 30px;
+  border-radius: 10px; 
+  box-shadow: 5px 6px 12px rgba(0,0,0,0.2); 
+} 
+.logout-button {
+    padding: 8px 16px;
+    background-color: maroon;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    background-color: green;
+}
+
+</style>
