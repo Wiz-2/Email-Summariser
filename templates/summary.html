@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<nav>
+    <a href="/logout" class="logout-button">Logout</a>
+</nav>
+<title>Email Summary</title>
+<link href="https://fonts.googleapis.com/css?family=Georgia,serif" rel="stylesheet"> 
+<style>
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(to right, #E8FFC9, #D79771); 
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+}
+
+.container {
+    width: 600px; 
+    margin: 60px auto; 
+    background-color: #C9FFD9;
+    padding: 30px 60px;
+    border-radius: 10px; 
+    box-shadow: 5px 6px 12px rgba(0,0,0,0.2); 
+} 
+.logout-button {
+    padding: 8px 16px;
+    background-color: maroon;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    background-color: green;
+}
+</style>
+</head>
+<body>
+<div class="container"> 
+  <h1>Email Summary</h1>
+  <div class="summary-content">
+    <p>{{summary}}</p>
+  </div>
+</div>
+</body>
+</html>
+
