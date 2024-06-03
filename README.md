@@ -6,4 +6,7 @@ You can play around with the algorithm changine the weights given to Tf-Idf vect
 You need to include instance directory in the code structure for purpose related to databases.
 
 Firstly, you need to enable Gmail API by visiting Google Cloud Console, and doing appropriate steps, then you need to fetch crednials.json file and save it in the same directory as the project. You can run the project by simply typing
-```python app.py``` command in the console, and you can start using the app in your localhost.
+```python app.py``` command in the console, and you can start using the app in your localhost. 
+
+You can visit this link to read the paper for this project :-
+https://docs.google.com/document/d/1b5VrPsZc2GTvdOGiJiWA66IoXnsCNxyUYtqorVGbzEw/edit?usp=sharing
