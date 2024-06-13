@@ -9,4 +9,4 @@ Firstly, you need to enable Gmail API by visiting Google Cloud Console, and doin
 ```python app.py``` command in the console, and you can start using the app in your localhost. 
 
 You can visit this link to read the paper for this project :-
-https://docs.google.com/document/d/1b5VrPsZc2GTvdOGiJiWA66IoXnsCNxyUYtqorVGbzEw/edit?usp=sharing
+[https://docs.google.com/document/d/1b5VrPsZc2GTvdOGiJiWA66IoXnsCNxyUYtqorVGbzEw/edit?usp=sharing](https://docs.google.com/document/d/1hPKjQVHk80okLlBGBCO6yfmPwkna4oCYEFrM6WXFx1s/edit)
